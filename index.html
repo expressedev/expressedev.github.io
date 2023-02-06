@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/alimendra.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Alimendra</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#Inicio" class="nav__logo">
+                <img src="assets/img/logo.jpg" class="imgLogo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#Inicio" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#probalos" class="nav__link">Probalos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobreNosotros" class="nav__link">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#productos" class="nav__link">Productos</a>
+                    </li>
+
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag' ></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">CARRITO</h2>
+
+        <div class="cart__container">
+            
+            
+        </div>
+        <div class="total">
+            <div class="total-title">TOTAL</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">COMPRAR</button>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="Inicio">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="assets/img/alimendra.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://api.whatsapp.com/send?phone=59899767544&text=Hola!%20Quiero%20mas%20informaci%C3%B3n%20sobre%20el%20producto!" target="_blank" class="home__social-link">
+                        Whatsapp
+                    </a>
+                    <a href="https://www.instagram.com/alimendra.uy/" target="_blank" class="home__social-link">
+                        Instagram
+                    </a>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">ALFAJORES<br> DE SEMILLAS</h1>
+                    <p class="home__description">
+                        Nuestros productos son 100% artesanales, Libres de excesos, Bajo en grasas. Ubicados en Uruguay, podrás adquirir nuestros productos en múltiples puntos de ventas.
+                    </p>
+                    <span class="home__price">$600</span>
+
+                    <div class="home__btns">
+                        <a href="#sobreNosotros" class="button button--gray button--small">
+                            Descubre
+                        </a>
+
+                        <button class="button home__button" onclick="window.location.href='#probalos';">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section container" id="probalos">
+            <h2 class="section__title">
+                Probalos
+            </h2>
+
+            <div class="featured__container grid">
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+                    <img src="assets/img/alfajorNo.png" alt="" class="featured__img">
+                    <div class="featured__data">
+                        <h3 class="featured__title">Originales - Caja x 12 unidades</h3>
+                        <span class="featured__price">$600</span>
+                    </div>
+                    <button class="button featured__button">AGREGAR AL CARRITO</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="assets/img/alfajorSinAzucarNo.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Sin Azucar - Caja x 12 unidades</h3>
+                        <span class="featured__price">$600</span>
+                    </div>
+
+                    <button class="button featured__button">AGREGAR AL CARRITO</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="assets/img/alfajorNo.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Veganos - Caja x 12 unidades</h3>
+                        <span class="featured__price">$800</span>
+                    </div>
+                    
+                    <button class="button featured__button">AGREGAR AL CARRITO</button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== STORY ====================-->
+        <section class="story section container" id="sobreNosotros">
+            <div class="story__container grid">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">
+                        Sobre Alimendra
+                    </h2>
+
+                    <h1 class="story__title">
+                        Más que <br> alfajores
+                    </h1>
+
+                    <p class="story__description">
+                        Lo logramos, finalmente un alfajor que es rico en nutrientes y rico en sabor. Comer saludable nunca fue tan facil.
+                    </p>
+
+                    <a href="#" class="button button--small">Descubre</a>
+                </div>
+
+                <div class="story__images">
+                    <img src="assets/img/semillas.png" alt="" class="story__img">
+                    <div class="story__square"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section container" id="productos">
+            <h2 class="section__title">
+                Productos
+            </h2>
+
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="assets/img/alfajorNo.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Dulce de Leche</h3>
+                    <span class="products__price">$600</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/alfajorSinAzucarNo.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Sin Azúcares</h3>
+                    <span class="products__price">$600</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/alfajorNo.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Vegano</h3>
+                    <span class="products__price">$800</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <h2 class="section__title">
+                                ¿Qué opinan nuestros clientes?
+                            </h2>
+                            <p class="testimonial__description">
+                                Son increibles estos alfajores. Son deliciosos, sanos y no te caen pesados. La caja se termino en una semana, mi familia estaba fascinada con los alfajores.
+                            </p>
+                            <h3 class="testimonial__date">Marzo 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/mujer1.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Camila</span>
+                                    <span class="testimonial__perfil-detail">Cliente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Nunca he probado un alfajor mas delicioso. La combinación de las semillas es riquisimas, nunca pense que comer sano seria tan facil.
+                            </p>
+                            <h3 class="testimonial__date">Noviembre 15. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/hombre.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Javier</span>
+                                    <span class="testimonial__perfil-detail">Cliente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Increibles. Nada mas para decir.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/mujer2.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Jacinta</span>
+                                    <span class="testimonial__perfil-detail">Cliente</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="assets/img/mano.png" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+
+        <!--==================== NEWSLETTER ====================-->
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Subscribete a nuestras <br> redes sociales</h2>
+                    <p class="newsletter__description">
+                        Descubri mas sobre nosotros y nuestros alfajores en nuestras redes sociales.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Nuestra Información</h3>
+
+                <ul class="footer__list">
+                    <li>Montevideo - Urugauy</li>
+                    <li>Ejido 1620</li>
+                    <li>099454389</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Sobre Nosotros</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Soporte</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Productos</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Dulce de Leche</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Sin Azucares</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Vegano</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Alimendra. Todos los derechos reservados.</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
