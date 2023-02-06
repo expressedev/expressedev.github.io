@@ -1026,10 +1026,26 @@ body.dark-theme {
     grid-template-columns: repeat(1, 180px);
     justify-content: center;
   }
+  #trashBox{
+    left: 103px;
+  }
+  .btn-buy{
+      margin: 1.5rem auto 0 auto;
+  }
+}
+
+/* For small-medium devices */
+@media screen and (max-width: 375px) and (min-width: 321px){
+  #trashBox{
+    left: 114px;
+  }
+  .btn-buy{
+    margin: 1.5rem auto 0 auto;
+  }
 }
 
 /* For medium devices */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 760px)  {
   .home__img-bg {
     width: 340px;
   }
@@ -1149,6 +1165,7 @@ body.dark-theme {
   .footer__title {
     font-size: var(--h3-font-size);
   }
+  
 }
 
 @media screen and (min-width: 992px) {
