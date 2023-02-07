@@ -178,7 +178,7 @@ function ready() {
     var input = quantityInputs[i];
     input.addEventListener("change", quantityChanged);
   }
-  //   ADD TO CART
+  // ADD TO CART
   var addCart = document.getElementsByClassName("button featured__button");
   for (var i = 0; i < addCart.length; i++) {
     var button = addCart[i];
@@ -212,6 +212,31 @@ function quantityChanged(event) {
   }
   updateTotal();
 }
+
+// //CART FULL
+// var addNumber = document.getElementsByClassName("button featured__button");
+// for (var i = 0; i < addNumber.length; i++) {
+//   var buttonNumber = addNumber[i];
+//   buttonNumber.addEventListener("click", addCartNumber);
+// }
+
+// //CART FULL
+// function addCartNumber(event) {
+//   var button = event.target;
+//   var shopCart = button.parentElement;
+//   var number = shopCart.getElementsByClassName("cartAmount")[0];
+//   addNumberToCart(number);
+// }
+// function addNumberToCart(number) {
+//   var cartShopNumber = document.createElement("div");
+//   cartShopNumber.classList.add("nav__shop");
+//   var numberCart = document.getElementsByClassName("nav container")[0];
+//   var cartNumber = `
+//   <div class="cartAmount">${number}</div>`;
+
+//   cartShopNumber.innerHTML = cartNumber;
+//   numberCart.append(cartShopNumber);
+// }
 //ADD TO CART
 function addCartClicked(event) {
   var button = event.target;
@@ -247,7 +272,7 @@ function addProductToCart(title, price, productImg) {
                               <input type="number" value="1" class="cart-quantity"> 
                               <i class='bx bx-trash-alt cart__amount-trash' id="trashBox" ></i>
                         </div>
-                     
+                        
 
 `;
   cartShopBox.innerHTML = cartBoxContent;
