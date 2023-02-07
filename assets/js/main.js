@@ -256,7 +256,7 @@ function addProductToCart(title, price, productImg) {
   var cartItemsNames = cartItems.getElementsByClassName("cart__title");
   for (var i = 0; i < cartItemsNames.length; i++) {
     if (cartItemsNames[i].innerText == title) {
-      alert("Ya agregaste este producto al carrito");
+      // alert("Ya agregaste este producto al carrito");
       return;
     }
   }

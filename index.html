@@ -15,8 +15,19 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
-
+  
     <title>Alimendra</title>
+
+    <script>
+        function showAlert() {
+            Swal.fire({
+            icon: "success",
+            title: "Agregado al Carrito",
+        });
+        }
+        </script>
+
+    <script src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </head>
 <body>
     <!--==================== HEADER ====================-->
@@ -132,7 +143,7 @@
                         <h3 class="featured__title">Originales - Caja x 12 unidades</h3>
                         <span class="featured__price">$600</span>
                     </div>
-                    <button class="button featured__button">AGREGAR AL CARRITO</button>
+                    <button class="button featured__button" onclick="showAlert()" >AGREGAR AL CARRITO</button>
                 </article>
 
                 <article class="featured__card">
@@ -145,7 +156,7 @@
                         <span class="featured__price">$600</span>
                     </div>
 
-                    <button class="button featured__button">AGREGAR AL CARRITO</button>
+                    <button class="button featured__button" onclick="showAlert()" >AGREGAR AL CARRITO</button>
                 </article>
 
                 <article class="featured__card">
@@ -158,11 +169,11 @@
                         <span class="featured__price">$800</span>
                     </div>
                     
-                    <button class="button featured__button">AGREGAR AL CARRITO</button>
+                    <button class="button featured__button" onclick="showAlert()">AGREGAR AL CARRITO</button>
                 </article>
             </div>
         </section>
-
+      
         <!--==================== STORY ====================-->
         <section class="story section container" id="sobreNosotros">
             <div class="story__container grid">
@@ -405,5 +416,9 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+      
+
+    
 </body>
 </html>
