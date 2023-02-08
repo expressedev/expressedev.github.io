@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
   
     <title>Alimendra</title>
+    <script>
+        import swal from 'sweetalert2';
+        window.Swal = Swal;
+    </script>
 
     <script>
         function showAlert() {
@@ -33,14 +37,14 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#Inicio" class="nav__logo">
+            <a href="#inicio" class="nav__logo">
                 <img src="assets/img/logo.jpg" class="imgLogo">
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#Inicio" class="nav__link active-link">Home</a>
+                        <a href="#inicio" class="nav__link active-link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#probalos" class="nav__link">Probalos</a>
@@ -95,7 +99,7 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home" id="Inicio">
+        <section class="home" id="inicio">
             <div class="home__container container grid">
                 <div class="home__img-bg">
                     <img src="assets/img/alimendra.png" alt="" class="home__img">
