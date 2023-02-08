@@ -1,4 +1,4 @@
-import * as dom from '../../dom/index.js'
+import * as dom from '../index.js'
 import { renderInput } from './renderInput.js'
 
 /**

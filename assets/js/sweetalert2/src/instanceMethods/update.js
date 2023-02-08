@@ -1,6 +1,6 @@
-import * as dom from '../../src/utils/dom/index.js'
-import { isUpdatableParameter } from '../../src/utils/params.js'
-import { warn } from '../../src/utils/utils.js'
+import * as dom from '../utils/dom/index.js'
+import { isUpdatableParameter } from '../utils/params.js'
+import { warn } from '../utils/utils.js'
 import privateProps from '../privateProps.js'
 
 /**

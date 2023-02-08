@@ -1,4 +1,4 @@
-import { warn, warnAboutDeprecation } from '../utils/utils.js'
+import { warn, warnAboutDeprecation } from './utils.js'
 
 export const defaultParams = {
   title: '',

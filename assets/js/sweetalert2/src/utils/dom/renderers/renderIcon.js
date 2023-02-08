@@ -1,6 +1,6 @@
 import privateProps from '../../../privateProps.js'
 import { iconTypes, swalClasses } from '../../classes.js'
-import * as dom from '../../dom/index.js'
+import * as dom from '../index.js'
 import { error } from '../../utils.js'
 
 /**

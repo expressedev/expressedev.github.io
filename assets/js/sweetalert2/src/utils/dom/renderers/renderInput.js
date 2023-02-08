@@ -6,7 +6,7 @@
  */
 import privateProps from '../../../privateProps.js'
 import { swalClasses } from '../../classes.js'
-import * as dom from '../../dom/index.js'
+import * as dom from '../index.js'
 import { error, isPromise, warn } from '../../utils.js'
 
 /** @type {InputClass[]} */

@@ -1,4 +1,4 @@
-import * as dom from '../../dom/index.js'
+import * as dom from '../index.js'
 
 /**
  * @param {SweetAlert2} instance
