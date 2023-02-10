@@ -733,8 +733,7 @@ body.dark-theme {
 /*=============== NEWSLETTER ===============*/
 .newsletter__bg {
   background-color: var(--first-color);
-  padding: 3rem 1.5rem;
-  text-align: center;
+  padding: 3rem 0.5rem;
   row-gap: 2.5rem;
 }
 
@@ -788,7 +787,18 @@ body.dark-theme {
 .footer__link:hover {
   color: var(--title-color);
 }
-
+.social{
+  display: flex;
+  column-gap: 1.5rem;
+  margin-left: 4vh;
+}
+.social-link{
+  font-size: 3.75rem;
+  color: var(--text-color);
+}
+.social-link:hover{
+  color: var(--title-color);
+}
 .footer__social {
   display: flex;
   column-gap: 1rem;
@@ -809,6 +819,13 @@ body.dark-theme {
   text-align: center;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+}
+.footer__list{
+  font-size: 16px;
+}
+.footer__links{
+  color: #595959;
+  row-gap: 0.75rem;
 }
 
 /*=============== SCROLL UP ===============*/
